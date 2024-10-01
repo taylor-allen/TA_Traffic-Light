@@ -1,12 +1,71 @@
+body {
+  background-image: url("https://trafficticketsny.com/wp-content/uploads/2022/07/redlight.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
-/* 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.traffic-light {
+  margin-top: 338px;
+  margin-left: 340px;
+}
 
-*/
+.redLight {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  margin-left: 4px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.yellowLight {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: -5px;
+  margin-bottom: 50px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.greenLight {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: -10px;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: orange;
+}
+
+.green {
+  background-color: rgb(92, 182, 23);
+}
+
+.glow-red {
+  box-shadow: 0 0 40px 5px red;
+}
+
+.glow-yellow {
+  box-shadow: 0 0 40px 5px yellow;
+}
+
+.glow-green {
+  box-shadow: 0 0 40px 5px rgb(11, 239, 11);
+}
